@@ -1,0 +1,26 @@
+.header {
+
+  &__logo {
+    aspect-ratio: 7 / 4;
+  }
+
+  &__container {
+    padding-top: 16px;
+    padding-bottom: 17px;
+    border-bottom: 1px solid $border-base;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: $logoNavColumnGap;
+  }
+
+  &__navigation {
+    display: none;
+    flex-grow: 1;
+    justify-content: flex-end;
+    @media screen and (min-width: $tableWidth ) {
+      display: flex;
+    }
+  }
+
+}

@@ -1,0 +1,12 @@
+header.header
+  .container
+    .header__container
+      +svgImage('header__logo', 'logo', 'Логотип парикмахерской Chik-Chik')
+      nav.header__navigation.navigation
+        ul.navigation__list
+          li.navigation__item
+            a.navigation__link(href='#price') Стоимость услуг
+          li.navigation__item
+            a.navigation__link(href='#about') О нас          
+      a.header__link.main-link(href='#reserve') Записаться
+      //- a.header__link.main-link(href='#reserve')&attributes({'disabled': true}) Записаться

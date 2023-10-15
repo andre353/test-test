@@ -1,0 +1,71 @@
+.radio {
+  flex-basis: 100%;
+  position: relative;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  display: inline-block;
+  @media screen and (min-width: $phoneWidth) {
+    flex-basis: content;
+  }
+
+  &__input {
+    position: absolute;
+    appearance: none;
+
+    &:focus + .radio__label,
+    &:checked + .radio__label {
+      color: $accentColor;
+      background-color: $btnBgHoverColor;
+      border: 1px solid $btnBgHoverColor;
+    }
+
+    &:checked:hover + .radio__label {
+      color: $accentColor;
+    }
+
+    &:disabled + .radio__label {
+      opacity: 0.3;
+    }
+  }
+
+  &__label {
+    display: inline-flex;
+    align-items: center;
+    padding: 16px 24px;
+    font-size: 14px;
+    text-transform: uppercase;
+    border: 1px solid $border-base;
+    border-radius: 36px;
+    cursor: pointer;
+    transition: all .0.3s ease-in-out;
+    transition-property: color, background-color;
+    
+    &:hover:not(:disabled) {
+      color: $btnBgHoverColor;
+      border: 1px solid $btnBgHoverColor;
+    }
+    
+    &_spec {
+      gap: 8px;
+      padding: 5px 24px 5px 8px;
+    }
+
+    &_month {
+    }
+
+    &_day {
+    }
+
+    &_time {
+    }
+    span {
+      font-feature-settings: 'pnum' on, 'lnum' on;
+    }
+    img {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+    }
+  }
+
+}

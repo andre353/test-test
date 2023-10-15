@@ -1,0 +1,21 @@
+@import 'utils/libs';
+@import 'utils/vars';
+@import 'utils/mixins';
+@import 'utils/fonts';
+@import 'utils/reset';
+@import 'utils/global';
+
+@import 'molecules/preloader';
+@import 'molecules/nav';
+@import 'molecules/radio';
+
+@import 'modules/header';
+
+@import 'blocks/slider';
+
+@import 'sections/hero';
+@import 'sections/price';
+@import 'sections/about';
+@import 'sections/reserve';
+
+@import 'modules/footer';

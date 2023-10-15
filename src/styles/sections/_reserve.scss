@@ -1,0 +1,42 @@
+.reserve {
+  margin-bottom: 0.5rem;
+
+  &__title {
+    font-size: $h2FontSize;
+    margin-bottom: $h2marginBottom;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    list-style-type: decimal;
+    list-style: decimal;
+    padding-left: 24px;
+    margin-bottom: 72px;
+  }
+
+  &__item {
+    list-style-type: decimal;
+    margin-bottom: 8px;
+  }
+  
+  &__fieldset {
+    margin-bottom: $fieldsetMarginBottom;
+    display: flex;
+    flex-wrap: wrap;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &_sub {
+      margin-bottom: 24px;
+      flex-basis: 100%;
+    }
+  }
+
+  &__legend {
+    font-size: $h3FontSize;
+    margin-bottom: $h3marginBottom;
+    text-transform: uppercase;
+  }
+}

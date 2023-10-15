@@ -1,0 +1,166 @@
+html {
+  line-height: $mainLineHeight;
+  font-size: 16px;
+  color: $mainFontColor;
+  height: 100%;
+  box-sizing: border-box;
+  @media screen and (min-width: $phoneWidth) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: $tableWidth) {
+    font-size: 15px;
+  }
+  @media screen and (min-width: $desktopWidth) {
+    font-size: 16px;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $mainFont;
+  font-size: $mainFontSize;
+  font-weight: $mainFontWeight;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $whiteColor;
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: $headerFont;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+section,
+.section {
+  position: relative;
+  padding-block: $sectionPaddingTopBottom;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  min-height: 100vh;
+  min-width: 100vh;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  width: min($containerWidth, 100%);
+  flex: 0 0 auto;
+  position: relative;
+  margin: 0 auto;
+  padding: 0px max(min($containerPaddingBig, calc((100% - $phoneWidth) / 2)), $containerPaddingSmall);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
+// Button (a and button):
+.main-link {
+  font-size: 12px;
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 10px 24px;
+  border-radius: 4px;
+  color: $accentColor;
+  background-color: $mainFontColor;
+  transition: all .3s ease-in-out;
+  opacity: 1;
+  outline-offset: 0;
+  transform: scale(1);  
+  transition-property: background-color, opacity, outline-offset, transform;
+  cursor: pointer;
+  &:active {
+    outline: 0;
+  }
+  &[disabled] {
+    opacity: 0.4;
+  }
+  &:hover:not(:disabled) {
+    background-color: $btnBgHoverColor;
+    transform: scale(.98);
+  }
+  &:focus {
+    background-color: $btnBgFocusColor;
+    outline-offset: .5rem;
+  }
+  &:focus-visible {
+    outline: 1px solid $default-color;
+  }
+  @media screen and (min-width: $phoneWidth) {
+    font-size: inherit;
+    padding: 13px 46px;
+  }
+  @supports selector(:focus-visible) {
+    &:hover {
+      transform: scale(.98);
+    }
+    &:focus {
+      outline-offset: 0rem;
+    }
+    &:focus-visible {
+      outline-offset: .5rem;
+    }
+  }
+}
+
+.h1-title {
+  font-size: $h1FontSize;  /*24px-54px*/
+  margin-bottom: $h1marginBottom;  /*16px-36px*/
+  text-transform: uppercase;
+}
+
+.h2-title {
+  font-size: $h2FontSize;  /*24px-54px*/
+  margin-bottom: $h2marginBottom; /*16px-24px*/
+  text-transform: uppercase;
+}
+
+.h3-title {
+  font-size: $h3FontSize;  /*16px-22px*/
+  margin-bottom: $h3marginBottom; /*8px*/
+  text-transform: uppercase;
+}
+
+button {
+  cursor: pointer;
+}
+
+.form-message {
+  padding-top: 20px;
+  font-style: italic;
+  font-weight: 20;
+}

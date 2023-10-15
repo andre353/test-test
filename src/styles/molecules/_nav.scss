@@ -1,0 +1,17 @@
+.navigation {
+
+  &__list {
+    display: flex;
+    align-items: center;
+    column-gap: 33px;
+  }
+  &__item {}
+  &__link {
+    padding: 13px 26px;
+    border-radius: 4px;
+  }
+  &__item {}
+  &__link {
+    text-transform: uppercase;
+  }
+}

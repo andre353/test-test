@@ -1,0 +1,23 @@
+.preloader {
+  position: relative;
+  min-height: 56px;
+
+  &:after {
+    content: '';
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    top: calc(50% - 28px);
+    left: calc(50% - 28px);
+    border: 12px double $btnBgFocusColor;
+    border-radius: 50%;
+    border-left-style: solid;
+    animation: rotate 0.5s infinite linear;
+  }
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}

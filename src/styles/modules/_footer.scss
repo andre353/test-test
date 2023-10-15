@@ -1,0 +1,39 @@
+.footer {
+  padding-bottom: 24px;
+
+  &__container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  &__logo {
+    margin-bottom: clamp(2em, 2vw, 2.5em);
+    aspect-ratio: 7 / 4;
+  }
+
+  &__contact {
+    span {
+      margin-right: 10px;
+    }
+  }
+
+  &__copyright {
+    flex-basis: 100%;
+  }
+
+  .navigation {
+    ul {
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    a {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+}

@@ -1,0 +1,12 @@
+@import "../blocks/slider";
+
+.hero {
+  
+  &__title {
+    max-width: 904px;
+  }
+  
+  &__slider {
+    min-height: max-content;
+  }
+}

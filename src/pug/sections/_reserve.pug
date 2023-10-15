@@ -1,0 +1,108 @@
+section#reserve.reserve
+  .container
+    h2.reserve__title Как к нам записаться
+    ol.reserve__list
+      li.reserve__item Выберите услугу, можно выбрать сразу несколько
+      li.reserve__item Выберите специалиста
+      li.reserve__item Выберите удобный день и время
+    .reserve__form-container
+      form.reserve__form
+        fieldset.reserve__fieldset.reserve__fieldset_service(name='fieldservice')
+          legend.reserve__legend Услуга
+          label.radio
+            input.radio__input(type='radio' name='service')
+            span.radio__label Стрижка ножницами
+          label.radio
+            input.radio__input(type='radio' name='service')
+            span.radio__label Стрижка машинкой
+          label.radio
+            input.radio__input(type='radio' name='service')
+            span.radio__label Стрижка + Стрижка бороды
+          label.radio
+            input.radio__input(type='radio' name='service')
+            span.radio__label Стрижка + Моделирование бороды
+          label.radio
+            input.radio__input(type='radio' name='service')
+            span.radio__label Бритье головы
+          label.radio
+            input.radio__input(type='radio' name='service')
+            span.radio__label Укладка
+          label.radio
+            input.radio__input(type='radio' name='service')
+            span.radio__label Оформление бровей
+        fieldset.reserve__fieldset(name='fieldspec')
+          legend.reserve__legend Специалист
+          label.radio  
+            input.radio__input(type='radio' name='spec')
+            span.radio__label.radio__label_spec
+              img(src=require('../../images/specialists/photo-1.webp') alt='')            
+              span Игорь
+          label.radio
+            input.radio__input(type='radio' name='spec')
+            span.radio__label.radio__label_spec
+              img(src=require('../../images/specialists/photo-2.webp') alt='')
+              span Анатолий
+          label.radio
+            input.radio__input(type='radio' name='spec')
+            span.radio__label.radio__label_spec
+              img(src=require('../../images/specialists/photo-3.webp') alt='')
+              span Руслан
+          label.radio
+            input.radio__input(type='radio' name='spec')
+            span.radio__label.radio__label_spec
+              img(src=require('../../images/specialists/photo-4.webp') alt='')
+              span Михаил
+          label.radio
+            input.radio__input(type='radio' name='spec')
+            span.radio__label.radio__label_spec
+              img(src=require('../../images/specialists/photo-5.webp') alt='')
+              span Евгений
+        fieldset.reserve__fieldset(name='fielddata')
+          legend.reserve__legend Дата и время
+          fieldset.reserve__fieldset.reserve__fieldset_sub(name='fieldmonth')
+            label.radio
+              input.radio__input(type='radio' name='month')
+              span.radio__label.radio__label_month Январь
+            label.radio
+              input.radio__input(type='radio' name='month')
+              span.radio__label.radio__label_month Февраль
+            label.radio
+              input.radio__input(type='radio' name='month')
+              span.radio__label.radio__label_month Март
+          fieldset.reserve__fieldset.reserve__fieldset_sub(name='fieldday')
+            label.radio
+              input.radio__input(type='radio' name='day')
+              span.radio__label.radio__label_day 18 января
+            label.radio
+              input.radio__input(type='radio' name='day')
+              span.radio__label.radio__label_day 19 января
+            label.radio
+              input.radio__input(type='radio' name='day')
+              span.radio__label.radio__label_day 20 января
+            label.radio
+              input.radio__input(type='radio' name='day')
+              span.radio__label.radio__label_day 21 января
+          fieldset.reserve__fieldset.reserve__fieldset_sub(name='fieldtime')
+            label.radio
+              input.radio__input(type='radio' name='time')
+              span.radio__label.radio__label_time 10:00-11:30
+            label.radio
+              input.radio__input(type='radio' name='time')
+              span.radio__label.radio__label_time 11:30-13:00
+            label.radio
+              input.radio__input(type='radio' name='time')
+              span.radio__label.radio__label_time 13:00-14:30
+            label.radio
+              input.radio__input(type='radio' name='time')
+              span.radio__label.radio__label_time 14:30-16:00
+            label.radio
+              input.radio__input(type='radio' name='time')
+              span.radio__label.radio__label_time 16:00-17:30
+            label.radio
+              input.radio__input(type='radio' name='time')
+              span.radio__label.radio__label_time 17:30-19:00
+            label.radio
+              input.radio__input(type='radio' name='time')
+              span.radio__label.radio__label_time 19:00-20:30
+          fieldset
+            button.reserve_btn.main-link#btn Записаться
